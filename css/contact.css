@@ -8,12 +8,12 @@
     border-radius: 23px;
 }
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
 }
 
-input, textarea {
+input ,textarea {
     min-width: 500px;
     padding: 10px 15px;
     margin: 10px;
@@ -28,7 +28,7 @@ input, textarea {
     justify-content: center;
 }
 
-button, a {
+button ,a {
     margin: 10px 10px 0 10px;
     padding: 0.5em;
     box-sizing: border-box;
@@ -43,7 +43,7 @@ button, a {
     transition: 0.2s;
 }
 
-.home:hover, .message:hover {
+.home:hover ,.message:hover {
     border: 2px solid #ffffff;
     background-color: #5e6491;
     color: #ffffff;
