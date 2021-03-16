@@ -1,0 +1,51 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    padding: 1em;
+    background-color: rgba(50, 71, 60, 0.342);
+    border-radius: 23px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    min-width: 500px;
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 1.3em;
+    border-radius: 20px;
+    border: none;
+    color: #551A8B;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+}
+
+button, a {
+    margin: 10px 10px 0 10px;
+    padding: 0.5em;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    background-color: #ffffff;
+    color: #551A8B;
+    font-size: 1.3em;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.home:hover, .message:hover {
+    border: 2px solid #ffffff;
+    background-color: #5e6491;
+    color: #ffffff;
+    transition: 0.4s;
+}

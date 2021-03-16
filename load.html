@@ -5,23 +5,28 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Load Game</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/load.css">
     </head>
     <body>
         <div class="wrapper">
             <div>
                 <div>
-                    <h1>4 IN LINE</h1>
+                    <h1>Saved Games</h1>
                 </div>
-                <div class="menu">
-                    <a href="play.html" class="btn" type="button">Play Game</a>
-                    <a href="load.html" class="btn" type="button">Load Game</a>
-                    <a href="contact.html" class="btn" type="button">Contact us</a>
+                <div class="Games">
+                    <ul id="gamesList" class="gameList">
+                        <p id="empty" class="hidden">No saved games</p>
+                    </ul>
+                    <div class="btns">
+                        <a href="index.html" class="home">Back Home</a>
+                        <button id="load-game" class="load">Load Game</button>
+                    </div>
+                    </form>
                 </div>
             </div>
         </div>
