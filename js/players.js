@@ -1,5 +1,3 @@
-'use strict'
-
 var p1Name = null;
 var p2Name = null;
 var btnStart = null;
@@ -9,13 +7,13 @@ var validateInput = function () {
     var isValid = true;
     if (p1Name.value.length < 3) {
         p1Name.value = '';
-        p1Name.placeholder = '3 or more characters, pleace';
+        p1Name.placeholder = 'Please 3 or more characters';
         isValid = false;
     }
 
     if (p2Name.value.length < 3) {
         p2Name.value = '';
-        p2Name.placeholder = '3 or more characters, pleace';
+        p2Name.placeholder = 'Please 3 or more characters';
         isValid = false;
     }
     return isValid;
