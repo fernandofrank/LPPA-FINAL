@@ -20,7 +20,7 @@ h1 {
     color: transparent;
 }
 
-.btn:hover {
+button:hover {
     border: 2px solid #ffffff;
     background-color: #5e6491;
     color: #ffffff;
