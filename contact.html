@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/contact.css">
+        <script type="text/javascript" src="js/contact.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -21,13 +22,14 @@
                 <div class="contact">
                     <form autocomplete="off">
                         <div class="form">
-                            <input type="text" name="name" id="name" placeholder="Name" />
-                            <input type="email" name="email" id="email" placeholder="Email" />
-                            <textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+                            <input type="text" name="name" id="name" class="entry" placeholder="Name" />
+                            <input type="email" name="email" id="email" class="entry" placeholder="Email" />
+                            <textarea name="message" id="message" class="entry" placeholder="Message"
+                                rows="5"></textarea>
                         </div>
                         <div class="btns">
                             <a href="index.html" class="home">Back Home</a>
-                            <button id="submit" class="message">Contact Us</button>
+                            <button type="button" id="submit" class="message">Contact Us</button>
                         </div>
                     </form>
                 </div>
