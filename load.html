@@ -11,6 +11,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/load.css">
+        <script type="text/javascript" src="./js/game.js"></script>
+        <script type="text/javascript" src="js/loadgame.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -18,13 +20,13 @@
                 <div>
                     <h1>Saved Games</h1>
                 </div>
-                <div class="Games">
-                    <ul id="gamesList" class="gameList">
-                        <p id="empty" class="hidden">No saved games</p>
+                <div class="gameList">
+                    <ul id="games" class="saveGames">
+                        <p id="empty">No saved games</p>
                     </ul>
                     <div class="btns">
                         <a href="index.html" class="home">Back Home</a>
-                        <button id="load-game" class="load">Load Game</button>
+                        <button id="loadGame" class="load">Load Game</button>
                     </div>
                     </form>
                 </div>

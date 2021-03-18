@@ -10,10 +10,49 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/game.css">
+        <script type="text/javascript" src="js/board.js"></script>
+        <script type="text/javascript" src="js/player.js"></script>
+        <script type="text/javascript" src="js/timer.js"></script>
+        <script type="text/javascript" src="js/game.js"></script>
     </head>
     <body>
         <div class="wrapper">
-
+            <div id="game">
+                <div id="game" class="game">
+                    <div id="generalTime" class="generalTime">
+                        <p id="time" class="timer">00:00</p>
+                    </div>
+                    <div id="gameboard" class="gameboard">
+                        <div id="finalMessage" class="hidden">
+                            <p id="winner"></p>
+                            <p id="message"></p>
+                            <button id="reset">Play Again</button>
+                            <a href="index.html" class="home">Back Home</a>
+                        </div>
+                        <div id="playArea" class="playArea"></div>
+                        <div id="divider" class="divider"></div>
+                        <div id="menu" class="menu">
+                            <div class="player">
+                                <p id="p1Nick">Name (P1)</p>
+                                <p id="p1Time">00:00</p>
+                            </div>
+                            <div id="turn" class="turn slot">
+                                <p id="turnText">P1</p>
+                            </div>
+                            <div class="player">
+                                <p id="p2Nick">Name (P2)</p>
+                                <p id="p2Time">00:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btns">
+                    <a href="index.html" class="home">Back Home</a>
+                    <button id="save">Save Game</button>
+                </div>
+            </div>
         </div>
     </body>
 </html>
