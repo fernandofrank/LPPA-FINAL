@@ -3,3 +3,5 @@ I'm doing a final exam for an "LPPA" subject. I'm making a "4 in line" game, wit
 
 [Play here](https://fernandofrank.github.io/LPPA-FINAL/)
 
+
+[How to play](https://en.wikipedia.org/wiki/Connect_Four)

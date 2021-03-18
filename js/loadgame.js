@@ -9,7 +9,6 @@ var p2HTML = null;
 var p3HTML = null;
 var dateHTML = null;
 var listSection = null;
-var empty = null;
 var arrGameLI = null;
 var savedGameIndex = null;
 var selectedGame = -1;
@@ -35,7 +34,7 @@ var selectGame = function (e) {
     selectedGame = arrGameLI.indexOf(e.target);
     savedGameIndex = selectedGame;
     localStorage['gameIndex'] = JSON.stringify(savedGameIndex);
-    btnLoad.className = 'btn';
+    btnLoad.className = 'load';
 }
 
 var loadSavedGamesData = function () {
@@ -50,12 +49,6 @@ var loadSavedGamesData = function () {
         }
         dateHTML[i].innerHTML = savedGames[i].date;
     }
-}
-
-var showEmptyList = function () {
-    empty.className = ' ';
-    btnBack.className += ' disabled';
-    btnNext.className += ' disabled';
 }
 
 var renderList = function () {
@@ -88,7 +81,6 @@ window.onload = function () {
     p2HTML = document.getElementsByClassName('game-info p2');
     p3HTML = document.getElementsByClassName('game-info p3');
     dateHTML = document.getElementsByClassName('date');
-    empty = document.getElementById('empty');
     btnBack = document.getElementById('back');
     btnNext = document.getElementById('next');
     btnLoad = document.getElementById('loadGame');

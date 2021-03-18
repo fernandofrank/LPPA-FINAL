@@ -139,6 +139,11 @@ button ,a {
     transition: 0.4s;
 }
 
+.disabled {
+    color: #b8b8b8 !important;
+    pointer-events: none;
+}
+
 @media only screen and (max-width: 650px) {
     #game{
     width: 90vw;
