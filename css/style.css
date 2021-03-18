@@ -34,3 +34,17 @@ button:hover {
     transition: 0.2s;
     font-size: 1.5em;
 }
+
+button:focus, a:focus, input:focus, textarea:focus{
+    outline: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media only screen and (max-width: 1600px) {
+    .h1 {
+        font-size: 4em;
+    }
+}
