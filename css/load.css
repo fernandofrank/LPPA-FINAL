@@ -1,4 +1,4 @@
-.Games {
+.gameList {
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -6,6 +6,115 @@
     padding: 1em;
     background-color: rgba(50, 71, 60, 0.342);
     border-radius: 23px;
+}
+
+#games {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 300px;
+    max-height: 390px;
+    margin: 0;
+    padding: 0;
+    border-radius: 13px;
+    list-style-type: none;
+    background-color: #f1f1f1;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 99%;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    border-bottom: 1px solid #cecece;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#empty {
+    font-size: 1.3rem;
+}
+
+.saveGames{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #f1f1f1;
+    color: #5e6491;
+    border-radius: 13px;
+    overflow: auto;
+}
+
+.saveGames::-webkit-scrollbar { display: none; }
+
+.game:focus {
+    outline: none;
+    border: 0.1em solid #5e6491;
+    border-radius: 13px;
+}
+
+.match-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 400px;
+    margin: 10px 10px 0 10px;
+    font-size: 30px;
+    pointer-events: none;
+}
+
+.gameInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.matchContainer p {
+    padding: 0;
+    margin: 0;
+}
+
+.date {
+    margin: 0.3em 0;
+    padding: 0;
+    font-size: 0.6em;
+    pointer-events: none;
+}
+
+.delete {
+    margin: 10px;
+    padding: 0.5em;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #551A8B;
+    border: 0.1em solid #5e6491;
+    font-size: 0.7em;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.delete:hover {
+    border: 2px solid #ffffff;
+    background-color: #5e6491;
+    color: #ffffff;
+    transition: 0.4s;
 }
 
 button ,a {
@@ -30,34 +139,47 @@ button ,a {
     transition: 0.4s;
 }
 
-#gamesList {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    min-height: 300px;
-    margin: 0;
-    padding: 0;
-    border-radius: 13px;
-    list-style-type: none;
-    background-color: #f1f1f1;
+@media only screen and (max-width: 650px) {
+    #game{
+    width: 90vw;
+    }
+    .game{
+    width: 90vw;
+    }
 }
 
-.gamesList {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    border-radius: 10px;
-    border-bottom: 1px solid #cecece;
-    font-size: 1.5em;
-    cursor: pointer;
+@media only screen and (max-width: 500px) {
+     #game{
+    width: 85vw;
+    }
+    .game{
+    width: 85vw;
+    }
 }
 
-#empty {
-    font-size: 1.3rem;
+@media only screen and (max-width: 450px) {
+    #game{
+    width: 80vw;
+    }
+    .game{
+    width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    h1{
+    font-size: 2em;
+    }
+    .match-container{
+     font-size: 0.7em;
+    }
+    .saveGames{
+    font-size: 0.7em;
+    }
+    #game{
+    min-height: 100px;
+    }
+    button, a{
+     font-size: 1rem;
+    }
 }

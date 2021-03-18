@@ -7,3 +7,91 @@
     background-color: rgba(50, 71, 60, 0.342);
     border-radius: 23px;
 }
+
+input ,textarea {
+    min-width: 500px;
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 1.3em;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: #551A8B;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+}
+
+button ,a {
+    display: flex;
+    margin: 10px 10px 0 10px;
+    padding: 0.5em;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    background-color: #ffffff;
+    color: #551A8B;
+    font-size: 1.3em;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.home:hover ,.message:hover {
+    border: 2px solid #ffffff;
+    background-color: #5e6491;
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+@media only screen and (max-width: 650px) {
+    .contact{
+    width: 30vw;
+    }
+    input ,textarea {
+    min-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    h1{
+    font-size: 3em;
+    }
+    .contact{
+    width: 80vw;
+    }
+    input ,textarea {
+    min-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .contact{
+    width: 70vw;
+    }
+    input ,textarea {
+    min-width: 250px;
+    }
+    h1{
+    font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+     input ,textarea {
+    min-width: 250px;
+    font-size: 0.5em;
+    }
+    input ,textarea {
+    min-width: 200px;
+    }
+    .contact{
+    width: 80vw;
+    }
+    button, a{
+     font-size: 0.7rem;
+    }
+}

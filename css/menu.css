@@ -38,3 +38,39 @@
     transition: 0.2s;
     font-size: 1.5em;
 }
+
+@media only screen and (max-width: 1400px) {
+    .menu {
+        width: 30vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .menu {
+        width: 40vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .menu {
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .menu {
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .menu {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .menu {
+        width: 90vw;
+    }
+}
